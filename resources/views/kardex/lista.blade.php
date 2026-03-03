@@ -36,8 +36,8 @@
             <tr>
                 <th scope="col">Nro</th>
                 <th scope="col">Gestion</th>
-                <th scope="col">Modalidad</th>
                 <th scope="col">Título</th>
+                <th scope="col">MO</th>
                 <th scope="col">TP</th>
                 <th scope="col">EX</th>
                 <th scope="col">NA</th>

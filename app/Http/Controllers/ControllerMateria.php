@@ -29,9 +29,9 @@ class ControllerMateria extends Controller
 
             $tareas=Tarea::leftJoin('sem_materiahabilitada', 'sem_tarea.idmateriahabilitada', '=', 'sem_materiahabilitada.id')
                     ->join('sem_materia', 'sem_materiahabilitada.materia_id', '=', 'sem_materia.id') // Ajusta 'materia_id' según tu tabl
-                    ->join('users', 'sem_tarea.idestudiante', '=', 'users.id')
+                    //->join('users', 'sem_tarea.idestudiante', '=', 'users.id')
                     ->where('sem_materia.codigo', $request->codigo)
-                    ->where('sem_tarea.idestudiante', $id)
+                    ->where('sem_tarea.iduser', $id)
                     ->where('sem_materiahabilitada.estado', $id)
                     ->select(
                         'sem_tarea.fecha',
@@ -39,6 +39,7 @@ class ControllerMateria extends Controller
                         'sem_tarea.titulo',
                         'sem_tarea.contenido',
                     )
+                    ->OrderBy('sem_tarea.fecha','DESC')
                     ->get();
             
    

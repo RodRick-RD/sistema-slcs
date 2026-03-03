@@ -38,7 +38,7 @@
   </div>
   <div class="col-12 col-md-4 p-2">
     <div class="card card-info">
-      <div class="card-header">
+      <div class="card-header bg-navy">
         <h3 class="card-title">NOTIFICACIONES</h3>
         <div class="card-tools">
           <button type="button" class="btn btn-tool" data-card-widget="collapse">

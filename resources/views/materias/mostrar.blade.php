@@ -30,7 +30,7 @@
                             <i class="fas fa-video bg-danger"></i>
 
                             <div class="timeline-item">
-                            <h3 class="timeline-header font-weight-bold p-2">{{ $tarea->titulo }}</h3>
+                            <h3 class="timeline-header font-weight-bold p-2 py-3">{{ $tarea->titulo }}</h3>
 
                             <div class="timeline-body">
                                 <div class="embed-responsive embed-responsive-16by9">
@@ -42,9 +42,8 @@
                     @elseif($tarea->tipo=='link')
                         <div>
                           <i class="fas fa-link bg-purple"></i>
-
                             <div class="timeline-item">
-                            <h3 class="timeline-header font-weight-bold p-2">{{ $tarea->titulo }}</h3>
+                            <h3 class="timeline-header font-weight-bold p-2 py-3">{{ $tarea->titulo }}</h3>
 
                             <div class="timeline-body">
                               <a href="{{$tarea->contenido }}" target="_blank"><button class="btn btn-link">{{$tarea->contenido }}</button></a>
@@ -57,7 +56,7 @@
                             <i class="fas fa-file bg-secondary"></i>
 
                             <div class="timeline-item">
-                            <h3 class="timeline-header font-weight-bold p-2">{{ $tarea->titulo }}</h3>
+                            <h3 class="timeline-header font-weight-bold p-2 py-3">{{ $tarea->titulo }}</h3>
 
                             <div class="timeline-body">
                             {!! $tarea->contenido !!}
